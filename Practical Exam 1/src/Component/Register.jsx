@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import './Register.css'
+import Header from "../Component/Header";
+
+
 
 const Register = () => {
 
@@ -8,7 +12,7 @@ const Register = () => {
     const [input, setInput] = useState({
         name: "",
         email: "",
-        password: "",
+        password:"",
     })
 
     const handleSubmit = (e) => {
@@ -23,6 +27,7 @@ const Register = () => {
 
     return (
         <div align="center">
+            <Header/>
             <h2>Register</h2>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -41,10 +46,10 @@ const Register = () => {
                 </div>
                 <br />
                 <div>
-                    <button type="submit"> Register</button>
+                    <button type="submit"> Login</button>
                 </div>
             </form>
-            <Link to={"/login"}>login</Link>
+           
         </div>
     )
 }

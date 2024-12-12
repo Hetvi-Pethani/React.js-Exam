@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import Header from "../Component/Header";
 
 const Login = () => {
 
@@ -33,6 +34,7 @@ const Login = () => {
 
     return (
         <div align="center">
+            <Header/>
             <h2>Login page</h2>
             <form onSubmit={handleLogin}>
 
@@ -52,7 +54,7 @@ const Login = () => {
                 <p>Don't have an account?<a href="register">Register here</a></p>
                 
             </form>
-           <Link to={"/home"}></Link>
+          
         </div>
     )
 }

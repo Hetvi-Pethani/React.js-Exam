@@ -1,0 +1,27 @@
+form {
+    background-color: rgb(152, 192, 230);
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    padding: 5%;
+    border-radius: 40px;
+}
+
+input[type="email" i] {
+    padding: 5px;
+    margin: 0 20px;
+    width: 80%;
+}
+
+input[type="text" i] {
+    padding: 5px;
+    margin: 0 20px;
+    width: 80%;
+}
+input[type="password" i] {
+    padding: 5px;
+    margin: 0 20px;
+    width: 80%;
+}
+
+    
