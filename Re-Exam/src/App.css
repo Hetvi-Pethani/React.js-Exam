@@ -32,7 +32,6 @@ label {
   background-color: rgba(20, 93, 93, 0.412);
 }
 
-
 table thead tr th {
   background-color: rgb(156, 202, 202) !important;
   font-size: 20px;
@@ -55,5 +54,4 @@ table tbody tr td{
  background-color: rgb(197, 235, 235) !important;
  color: rgb(4, 56, 56) !important;
  font-weight: 500;
-
 }
