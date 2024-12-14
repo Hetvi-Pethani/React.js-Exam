@@ -36,7 +36,7 @@ const App = () => {
 
     const updatedEmp = [...employees, newEmployee];
     setEmployees(updatedEmp);
-    localStorage.setItem('employees', JSON.stringify(updatedEmp));
+    localStorage.setItem('employees', JSON.stringify (updatedEmp));
 
     setName('');
     setEmail('');
@@ -48,11 +48,11 @@ const App = () => {
 
   const handleDelete = (id) => {
     const updatedEmp = employees.filter((val) => val.id !== id);
-    setEmployees(updatedEmp);
+ 
     localStorage.setItem('employees', JSON.stringify(updatedEmp));
-    console.log('Deleted Employee ID:', id); 
-    console.log('Updated Employees:', updatedEmp);
-    alert("deleted record") 
+    console.log('Deleted Employee ID:', id);
+    setEmployees(updatedEmp);
+  
   };
 
 
@@ -97,7 +97,8 @@ const App = () => {
           <label className="form-label">Designation</label>
           <input type="text" className="form-control" value={Designation} onChange={(e) => setDesignation(e.target.value)} />
         </div>
-        <button type="submit" className="btn"> {Name ? 'Update Employee' : 'Add Employee'} </button>
+        <button type="submit" className="btn"> {   Designation ?'Update Employee' : 'Add Employee'}
+        </button>
       </form>
 
       <h3 className="mt-5">Employee Records View</h3>
