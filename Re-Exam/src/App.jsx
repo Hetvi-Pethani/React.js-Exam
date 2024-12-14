@@ -50,11 +50,14 @@ const App = () => {
     const updatedEmp = employees.filter((val) => val.id !== id);
     setEmployees(updatedEmp);
     localStorage.setItem('employees', JSON.stringify(updatedEmp));
+    console.log('Deleted Employee ID:', id); 
+    console.log('Updated Employees:', updatedEmp);
+    alert("deleted record") 
   };
 
 
   const handleUpdate = (id) => {
-    const employeeToEdit = employees.find((val) => val.id === id);
+    const employeeToEdit = employees.find((val) => val.id == id);
     setName(employeeToEdit.name);
     setEmail(employeeToEdit.email);
     setPassword(employeeToEdit.password);
@@ -99,7 +102,7 @@ const App = () => {
 
       <h3 className="mt-5">Employee Records View</h3>
       <table className="table  mt-3">
-        <thead>
+        <thead class="table-light">
           <tr>
             <th>Name</th>
             <th>Email</th>
@@ -120,7 +123,7 @@ const App = () => {
                 <td>{employee.designation}</td>
                 <td>
                   <button className="btn  btn-sm" onClick={() => handleUpdate(employee.id)} >  Edit </button>
-                  <button className="btn btn-sm ms-2"onClick={() => handleDelete(employee.id)}> Delete</button>
+                  <button className="btn btn-sm ms-2" onClick={() => handleDelete(employee.id)}> Delete</button>
                 </td>
               </tr>
             ))}

@@ -1,27 +1,31 @@
 h2 {
-  background-color: rgb(185, 233, 233);
+  background-color: #a2d9ce;
   padding: 20px;
   border-radius: 10px;
   color: rgb(10, 97, 97);
   font-style: italic;
+  width: 50%;
+  margin: 3% auto;
 }
 
 form {
-  background-color: rgb(197, 235, 235);
+  background-color: #caefe8;
   padding: 20px;
   border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
 
 }
 
 label {
-  color: rgb(10, 97, 97);
+  color: #eb984e;
   font-size: 20px;
   font-weight: 600;
   font-style: italic;
 }
 
 .btn {
-  background-color: rgb(10, 97, 97);
+  background-color: rgb(19, 84, 84);
   border: 0;
   padding: 10px;
   color: #fff;
@@ -29,29 +33,39 @@ label {
 }
 
 .btn:hover {
-  background-color: rgba(20, 93, 93, 0.412);
+  background-color: #eb984e;
+  color: #fff;
+  transition: 0.5s;
 }
 
 table thead tr th {
-  background-color: rgb(156, 202, 202) !important;
+  background-color: #caefe8 !important;
   font-size: 20px;
-  color: rgb(6, 62, 62) !important;
+  color: #eb984e !important;
   font-weight: 600;
   font-style: italic;
 }
 h3 {
-  background-color: rgb(185, 233, 233);
+  background-color:#a2d9ce;
   padding: 20px;
   border-radius: 10px;
   color: rgb(10, 97, 97);
   font-style: italic;
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
 
 table tbody tr td{
  font-size: 17px;
  background-color: rgb(197, 235, 235) !important;
- color: rgb(4, 56, 56) !important;
+ color: rgb(19, 84, 84) !important;
  font-weight: 500;
+ 
+}
+
+.form-control {
+  width: 100%;
+  
 }
